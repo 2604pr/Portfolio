@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio By Pranshu</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background: rgb(39, 39, 123);
+            color: white;
+        }
+
+        nav{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 90px;
+            background: #a82b81;
+        }
+
+        nav ul{
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li{
+            list-style: none;
+            margin: 0 14px;
+        }
+        nav ul li a{
+            text-decoration: none;
+            color: white;
+        }
+        nav ul li a:hover{
+            color: #0fc9c6;
+            font-size: 1.1rem;
+        }
+        .left{
+            font-size: 1.5rem;
+        }
+        .first{
+            display: flex;
+            justify-content: space-around;
+            margin: 23px 0;
+        }
+
+        .first > div{
+            width: 30%;
+        }
+
+        .leftSection{
+            font-size: 1.2rem;
+        }
+
+        .rightSection img{
+            width: 150px;
+            height: 140px;
+        }
+        .pr1{
+            color: #d40c7a;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left">Pranshu Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">About</a></li>
+                    <li><a href="/">Services</a></li>
+                    <li><a href="/">Projects</a></li>
+                    <li><a href="/">Connect with me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="first">
+            <div class="leftSection">
+            Hi,My name is <span class="pr1">Pranshu</span>
+            and I am a passionate Web Developer
+        </div>
+            <div class="rightSection">
+            <img src="pr.jpg" alt="Pranshu">
+        </div>
+        </section>
+    </main>
+</body>
+</html>

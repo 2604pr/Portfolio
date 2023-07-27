@@ -14,7 +14,7 @@
             padding: 0;
         }
         body{
-            background: rgb(39, 39, 123);
+            background: rgb(17, 61, 78);
             color: white;
         }
 
@@ -22,8 +22,8 @@
             display: flex;
             justify-content: space-around;
             align-items: center;
-            height: 90px;
-            background: #a82b81;
+            height: 60px;
+            background: #951159;
         }
 
         nav ul{
@@ -41,7 +41,7 @@
         }
         nav ul li a:hover{
             color: #0fc9c6;
-            font-size: 1.1rem;
+            font-size: 1.02rem;
         }
         .left{
             font-size: 1.5rem;
@@ -60,12 +60,38 @@
             font-size: 1.2rem;
         }
 
+        .leftSection .buttons{
+            padding: 12px;
+        }
+        .leftSection .btn{
+            border-radius: 3px;
+            font-size: 12px;
+            background-color: hsl(311, 28%, 73%);
+            color: #891313;
+        }
+
         .rightSection img{
             width: 150px;
             height: 140px;
         }
+
         .pr1{
-            color: #d40c7a;
+            color: #dfaa0b;
+        }
+
+        #element{
+            color: #19ed7c;
+        }
+
+        
+        .footer{
+            display: flex;
+            padding: 3px 10px;
+            justify-content: space-evenly;
+        }
+
+        .footer ul{
+            list-style: none;
         }
     </style>
 </head>
@@ -87,13 +113,43 @@
     <main>
         <section class="first">
             <div class="leftSection">
-            Hi,My name is <span class="pr1">Pranshu</span>
-            and I am a passionate Web Developer
+            Hey,I am <span class="pr1">Pranshu</span>
+            <div>a passionate</div>
+            <span id="element"></span>
+            <div class="buttons">
+                <button class="btn">Download Resume</button>
+                <button class="btn">Visit Github</button>
+            </div>
         </div>
             <div class="rightSection">
             <img src="pr.jpg" alt="Pranshu">
         </div>
         </section>
     </main>
+    <footer>
+        <div class="footer">
+            <div class="footer-first">
+                <h3>
+                    Portfolio by Pranshu
+                </h3>
+            </div>
+            <div class="footer-second">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Profiles</li>
+                    <li>Connect with me</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+    var typed = new Typed('#element', {
+      strings: ['<i>Front End Developer</i> ', '<i>Problem Solver</i> ','<i>BackEnd Developer</i> ','<i>JAVA Developer</i> ', '<i>SQL Developer</i> '],
+      typeSpeed: 50,
+    });
+  </script>
 </body>
 </html>
